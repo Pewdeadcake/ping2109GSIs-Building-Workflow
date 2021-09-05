@@ -15,13 +15,6 @@ bot_token = os.getenv('TOKEN')
 channel = os.getenv('CHAT_ID')
 chatid = os.getenv('TG_CHAT_IDS')
 
-def send_test_sticker():
-    try:
-        telegram_notify = telegram.Bot(bot_token)
-        telegram_notify.send_sticker(chat_id=channel, sticker='CAACAgUAAxkBAAECxHdhHK8RDiVW9UPl9nXcJzen3tgVMAACrQIAAlIJ6VRjcWIcrnhvuSAE')
-    except Exception as ex:
-        print(ex)
-
 def send_test_message():
     try:
         telegram_notify = telegram.Bot(bot_token)
@@ -32,5 +25,4 @@ def send_test_message():
     except Exception as ex:
         print(ex)
 
-send_test_sticker()
 send_test_message()
