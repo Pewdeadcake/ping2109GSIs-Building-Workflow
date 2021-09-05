@@ -2,7 +2,7 @@ name: ping2109GSIs Builder
 
 on:
   push:
-    branches: [main]
+    branches: [private]
 
 jobs:
   build:
